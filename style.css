@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Press+Start+2P');
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  cursor: none;
+
+}
+
+body {
+  background:linear-gradient(to top left, rgba(255,255,255,.5) , white 30%, white 70%, rgba(255,255,255,.5) ),url("hoffman.png"),hotpink;
+
+  min-height: 100vh;
+
+}
+
+.pointer {
+  pointer-events: none;
+  position:fixed;
+  top:-100px;
+  left:-100px;
+
+}
+
+h1 {
+  font-family: "Press Start 2P";
+  color:lightgreen;
+  font-size: 2.5rem;
+
+  animation-name: colors;
+  animation-duration:4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+h2 {
+  font-weight: 300;
+  color:hotpink;
+  font-size: 1.2rem;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin:auto;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap:1rem;
+
+}
+
+.chooser {
+  padding:0;
+  list-style-type: none;
+
+}
+
+.chooser li {
+  background-color: hotpink;
+  margin:.3em;
+  padding:.3em;
+  display: inline-block;
+  font-size: .8rem;
+}
+
+.chooser a {
+  color:white;
+  text-decoration: none;
+}
+
+.chooser-container {
+
+    padding:.5em;
+    border-left:1px solid hotpink;
+}
+
+.form-container {
+  grid-row:2;
+  grid-column: 1 /2;
+
+  background-color: white;
+  padding:1em;
+
+  box-shadow: 2px 2px 5px rgba(160,30,100,.3);
+}
+
+input, label, textarea {
+  display: block;
+  width:100%;
+
+  margin-top: .5em;
+}
+
+textarea {
+  resize: vertical;
+
+  height:8rem;
+}
+
+[type="submit"]{
+  width:auto;
+}
+
+.band-info {
+  background-color: white;
+  padding:1em;
+
+  box-shadow: 2px 2px 5px rgba(160,30,100,.3);
+}
+
+
+.player-container {
+  display: grid;
+  justify-content: center;
+
+  background-color: hotpink;
+}
+@keyframes colors {
+  0% {
+    color:lightgreen;
+  }
+  20%
+  {
+    color:lightsalmon;
+  }
+  40%
+  {
+    color:lightskyblue;
+  }
+
+  60%
+  {
+    color:plum;
+  }
+  80%
+  {
+    color:slateblue
+  }
+  100%
+  {
+    color:sandybrown;
+  }
+}
